@@ -4,7 +4,10 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
     "skipLibCheck": true,
-
+    "paths": {
+      "@mantine/core": ["./node_modules/@mantine/core/lib/index.d.ts"],
+      "@mantine/hooks": ["./node_modules/@mantine/hooks/lib/index.d.ts"],
+    },
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,

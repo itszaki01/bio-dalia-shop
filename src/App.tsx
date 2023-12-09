@@ -1,7 +1,12 @@
-import "@mantine/core/styles.css";
-import { MantineProvider } from "@mantine/core";
-import { theme } from "./theme";
+import { Container } from "@mantine/core";
+import AppRouter from "./router/AppRouter";
+import { useDevicesContext } from "./context/DevicesContext";
 
 export default function App() {
-  return <MantineProvider theme={theme}>App</MantineProvider>;
+    const {isTabletAndMobile} = useDevicesContext()
+    return (
+        <Container size={isTabletAndMobile?'xl':'md'} p={0} pb={60}>
+            <AppRouter />
+        </Container>
+    );
 }
