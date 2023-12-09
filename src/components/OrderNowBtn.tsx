@@ -1,5 +1,4 @@
 import { Button, Center } from "@mantine/core";
-import React from "react";
 import "./OrderNowBtn.scss";
 import { useDevicesContext } from "../context/DevicesContext";
 type Props = {
